@@ -13,13 +13,51 @@
     <title>Hoteles</title>
   </head>
   <body>
+      <nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Hoteles</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./about.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Precios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Términos y condiciones</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contacto</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+          
+      </nav>
+    
       <!-- Header -->
       <!-- Aqui no uso un jumbotron porque uso Bootstrap 5, por lo que no es compatible -->
       <!-- Intenté simular las caracteristicas del jumbotron con estas clases -->
-    <div class="bg-info p-5 rounded-lg" style="--bs-bg-opacity: .5;">
+    <div class="bg-info p-5 rounded-lg jumbotron" style="--bs-bg-opacity: .5;">
         <h1 class="display-4">Hoteles</h1>
     </div>
     <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item active" aria-current="page">Home</li>
+            </ol>
+          </nav>
         <div class="row">
             <div class="col-md-4">
                 <p>
