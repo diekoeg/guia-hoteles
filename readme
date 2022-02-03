@@ -1,1 +1,8 @@
 Inicio del proyecto de guía de hoteles
+
+IMPORTANTE
+Instalar:
+npm i bootstrap-icons
+npm install bootstrap
+npm install jquery
+npm install popper.js
