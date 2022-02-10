@@ -101,6 +101,33 @@
             </div>
         </div>
 
+        <!-- Carrusel principal -->
+        <div id="CarruselPrincipal" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#CarruselPrincipal" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#CarruselPrincipal" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#CarruselPrincipal" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner"  style="width: 100%; height: 300px;">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <img src="images/carousel0.jpg" class="d-block w-100" alt="Primera foto">
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <img src="images/carousel1.png" class="d-block w-100" alt="Segunda foto">
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <img src="images/carousel2.jpg" class="d-block w-100" alt="Tercera foto">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#CarruselPrincipal" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#CarruselPrincipal" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
 
         <hr class="my-4">
         <div class="d-flex flex-wrap">
@@ -371,11 +398,6 @@
         var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
         var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
         return new bootstrap.Tooltip(tooltipTriggerEl)
-        })
-
-        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-        return new bootstrap.Popover(popoverTriggerEl)
         })
     </script>
   </body>
