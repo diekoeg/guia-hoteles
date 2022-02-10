@@ -176,7 +176,7 @@
             </div>
           </div>
           <div class="tab-pane fade" id="nav-tarjetas" role="tabpanel" aria-labelledby="nav-tarjetas-tab">
-            <div class="d-flex justify-content-center mt-3 mb-3">
+            <div class="d-flex justify-content-center mt-3 mb-3 me-4">
               <div class="card border-dark" style="width: 18rem;">
                 <div class="card-header">
                   Tarjetas aceptadas
@@ -186,6 +186,11 @@
                   <li class="list-group-item">Tarjeta VIP</li>
                   <li class="list-group-item">Tarjeta Black</li>
                 </ul>
+              </div>
+              <div class="ms-2">
+                <a class="link-dark" role="button" data-bs-toggle="popover" title="¿Qué son las tarjetas aceptadas?" data-bs-content="Estas son las tarjetas que aceptamos en el sitio web para poder ofrecer ofertas en los hoteles.">
+                  <i class="bi bi-question-circle" style="font-size: 1.5rem;"></i>
+                </a>
               </div>
             </div>
             <div class="accordion" id="accordionExample">
@@ -289,5 +294,11 @@
         </footer>
     </div>    
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+        })
+    </script>
   </body>
 </html>
