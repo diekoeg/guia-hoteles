@@ -139,7 +139,7 @@
                             Primer hotel 
                             <span class="badge bg-primary  rounded-pill">Nuevo</span>
                         </h4>
-                        <button class="btn btn-outline-success" role="button" data-bs-toggle="modal" data-bs-target="#modalContacto">
+                        <button id="contactoBtn1" class="btn btn-outline-success" role="button" data-bs-toggle="modal" data-bs-target="#modalContacto">
                             <i class="bi bi-send" ></i>
                         </button>
                     </div>
@@ -473,11 +473,39 @@
             </div>
         </footer>
     </div>    
+
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
         var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
         return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+
+        /* Button script  */
+        var myModal = document.getElementById('modalContacto');
+        var btnContacto = document.getElementById('contactoBtn1');
+
+        myModal.addEventListener('show.bs.modal', function (event) {
+          console.log('El modal se comenzó a mostrar.');
+
+          btnContacto.classList.remove('btn-outline-success');  
+          btnContacto.classList.add('btn-outline-warning');  
+          btnContacto.setAttribute('disabled', 'disabled')
+
+        })
+        myModal.addEventListener('shown.bs.modal', function (event) {
+          console.log('El modal se está mostrando.')
+        })
+        myModal.addEventListener('hide.bs.modal', function (event) {
+          console.log('El modal se está ocultando.')
+        })
+        myModal.addEventListener('hidden.bs.modal', function (event) {
+          console.log('El modal se está ocultó.')
+
+          btnContacto.classList.remove('btn-outline-warning');  
+          btnContacto.classList.add('btn-outline-success');  
+          btnContacto.removeAttribute('disabled')
+
         })
     </script>
   </body>
