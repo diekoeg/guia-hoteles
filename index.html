@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/styles.css">
 
     <title>Hoteles</title>
   </head>
@@ -49,7 +49,7 @@
       <!-- Header -->
       <!-- Aqui no uso un jumbotron porque uso Bootstrap 5, por lo que no es compatible -->
       <!-- Intenté simular las caracteristicas del jumbotron con estas clases -->
-    <div class="bg-info p-5 rounded-lg jumbotron" style="--bs-bg-opacity: .5;">
+    <div class="p-5 rounded-lg jumbotron">
         <h1 class="display-4">Hoteles</h1>
     </div>
     <div class="alert alert-warning alert-dismissible fade show" role="alert">
@@ -425,54 +425,52 @@
 
     <hr class="my-4">
     <!-- Footer -->
-    <div class="container-fluid bg-info py-1" style="--bs-bg-opacity: .5;">
-        <footer>
-            <div class="d-flex flex-wrap justify-content-between">
-              <div class="d-flex flex-column ">
-                  <h5>¿Quiénes somos?</h5>
-                  <ul class="nav flex-column mb-3">
-                      <li class="nav-item mb-2"><a href="./index.html" class="nav-link p-0 text-muted">Inicio</a></li>
-                      <li class="nav-item mb-2"><a href="./precios.html" class="nav-link p-0 text-muted">Precios</a></li>
-                      <li class="nav-item mb-2"><a href="./terminos.html" class="nav-link p-0 text-muted">Términos y condiciones</a></li>
-                      <li class="nav-item mb-2"><a href="./contacto.html" class="nav-link p-0 text-muted">Contacto</a></li>
-                      <li class="nav-item mb-2"><a href="./about.html" class="nav-link p-0 text-muted">Acerca de nosotros</a></li>
-                  </ul>
-              </div>
-          
-              <div class="d-flex flex-column">
-                  <address>
-                      <h5>Oficina central</h5>
-                      <p class="nav-link p-0 text-muted"> <i class="bi bi-compass"></i>Esta es la dirección de la oficina</p>
-                      <p class="nav-link p-0 text-muted"> <i class="bi bi-phone"></i>+52 5511 2233 44</p>
-                      <p class="nav-link p-0 text-muted"> <i class="bi bi-envelope"></i>correo_contacto@hotmail.com</p>
-                  </address>
-                  
-                  
-              </div>
-          
-              <div class="d-flex flex-column">
-                  <form>
-                  <h5>¡Suscribete a nuestros anuncios!</h5>
-                  <p>Puedes obtener ofertas mensuales por parte de nuestra empresa.</p>
-                  <div class="d-flex w-100 gap-2">
-                      <label for="newsletter1" class="visually-hidden"> <i class="bi bi-envelope"></i>Email</label>
-                      <input id="newsletter1" type="text" class="form-control" placeholder="Email">
-                      <button class="btn btn-secondary" type="button">Suscribirse</button>
-                  </div>
-                  </form>
-              </div>
+      <footer>
+          <div class="d-flex flex-wrap justify-content-between">
+            <div class="d-flex flex-column ">
+                <h5>¿Quiénes somos?</h5>
+                <ul class="nav flex-column mb-3">
+                    <li class="nav-item mb-2"><a href="./index.html" class="nav-link p-0 text-muted">Inicio</a></li>
+                    <li class="nav-item mb-2"><a href="./precios.html" class="nav-link p-0 text-muted">Precios</a></li>
+                    <li class="nav-item mb-2"><a href="./terminos.html" class="nav-link p-0 text-muted">Términos y condiciones</a></li>
+                    <li class="nav-item mb-2"><a href="./contacto.html" class="nav-link p-0 text-muted">Contacto</a></li>
+                    <li class="nav-item mb-2"><a href="./about.html" class="nav-link p-0 text-muted">Acerca de nosotros</a></li>
+                </ul>
             </div>
         
-            <div class="d-flex justify-content-between py-4 my-4 border-top">
-            <p>© 2021 Compañía Hoteles, Inc. Todos los derechos reservados.</p>
-            <ul class="list-unstyled d-flex">
-                <li class="ms-3"><a class="link-dark" href="https://www.twitter.com"><i class="bi bi-twitter" style="font-size: 1.5rem;"></i></a></li>
-                <li class="ms-3"><a class="link-dark" href="https://www.facebook.com"><i class="bi bi-facebook" style="font-size: 1.5rem;"></i></a></li>
-                <li class="ms-3"><a class="link-dark" href="https://www.instagram.com"><i class="bi bi-instagram" style="font-size: 1.5rem;"></i></a></li>
-            </ul>
+            <div class="d-flex flex-column">
+                <address>
+                    <h5>Oficina central</h5>
+                    <p class="nav-link p-0 text-muted"> <i class="bi bi-compass"></i>Esta es la dirección de la oficina</p>
+                    <p class="nav-link p-0 text-muted"> <i class="bi bi-phone"></i>+52 5511 2233 44</p>
+                    <p class="nav-link p-0 text-muted"> <i class="bi bi-envelope"></i>correo_contacto@hotmail.com</p>
+                </address>
+                
+                
             </div>
-        </footer>
-    </div>    
+        
+            <div class="d-flex flex-column">
+                <form>
+                <h5>¡Suscribete a nuestros anuncios!</h5>
+                <p>Puedes obtener ofertas mensuales por parte de nuestra empresa.</p>
+                <div class="d-flex w-100 gap-2">
+                    <label for="newsletter1" class="visually-hidden"> <i class="bi bi-envelope"></i>Email</label>
+                    <input id="newsletter1" type="text" class="form-control" placeholder="Email">
+                    <button class="btn btn-secondary" type="button">Suscribirse</button>
+                </div>
+                </form>
+            </div>
+          </div>
+      
+          <div class="d-flex justify-content-between py-3 border-top">
+          <p>© 2021 Compañía Hoteles, Inc. Todos los derechos reservados.</p>
+          <ul class="list-unstyled d-flex">
+              <li class="ms-3"><a class="link-dark" href="https://www.twitter.com"><i class="bi bi-twitter" style="font-size: 1.5rem;"></i></a></li>
+              <li class="ms-3"><a class="link-dark" href="https://www.facebook.com"><i class="bi bi-facebook" style="font-size: 1.5rem;"></i></a></li>
+              <li class="ms-3"><a class="link-dark" href="https://www.instagram.com"><i class="bi bi-instagram" style="font-size: 1.5rem;"></i></a></li>
+          </ul>
+          </div>
+      </footer>   
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script>

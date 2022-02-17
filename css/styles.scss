@@ -1,0 +1,53 @@
+$turquesa: #99FEFF;
+
+@mixin margenes ($top, $bottom) {
+    margin-top: $top;
+    margin-bottom: $bottom;
+    
+}
+
+footer {
+    padding: 10px 10px 0 10px;
+    @include margenes(20px, 0px);
+    background-color: $turquesa;
+}
+
+footer .d-flex{
+    flex: 1 200px;
+    
+}
+
+.card-hotel{
+    flex: 1 300px;
+    margin-top: 20px;
+}
+
+
+.card-hotel img{
+    height: 200px;
+    width: 100%;
+}
+
+.btn-reserva{
+    width: 100%;
+    border-radius: 0;
+
+}
+.jumbotron{
+    @include margenes(50px, 20px);
+    background-color: $turquesa;
+}
+
+i{
+    padding-right: 5px;
+}
+
+.breadcrumb{
+    --bs-bg-opacity: 0.2;
+    padding: 5px 15px 5px 15px;
+}
+
+.labels-form{
+    margin-right: 15px;
+}
+
