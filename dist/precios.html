@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/index.614ce4552b2b1455e99c.css">
+
+    <title>Hoteles</title>
+  </head>
+  <body>
+      <nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">Hoteles</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./about.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="./precios.html">Precios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./terminos.html">Términos y condiciones</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contacto.html">Contacto</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
+          
+      </nav>
+    
+      <!-- Header -->
+      <!-- Aqui no uso un jumbotron porque uso Bootstrap 5, por lo que no es compatible -->
+      <!-- Intenté simular las caracteristicas del jumbotron con estas clases -->
+      <div class="p-5 rounded-lg jumbotron">
+        <h1 class="display-4">Hoteles</h1>
+     </div>
+    <div class="container">
+      <ul class="nav nav-tabs" id="nav-tab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active"
+           id="nav-comparar-tab" 
+           data-bs-toggle="tab" 
+           data-bs-target="#nav-comparar" 
+           role="tab" 
+           aria-controls="nav-comparar" 
+           aria-selected="true">Comparar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" 
+          id="nav-tarjetas-tab" 
+          data-bs-toggle="tab" 
+          data-bs-target="#nav-tarjetas" 
+          role="tab" 
+          aria-controls="nav-tarjetas" 
+          aria-selected="false">Tarjetas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" 
+          id="nav-comentarios-tab" 
+          data-bs-toggle="tab" 
+          data-bs-target="#nav-comentarios" 
+          role="tab" 
+          aria-controls="nav-comentarios" 
+          aria-selected="false">Comentarios</a>
+        </li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane fade show active" id="nav-comparar" role="tabpanel" aria-labelledby="nav-comparar-tab">
+            <div class="table-responsive mt-3">
+              <table class="table table-hover">
+                <thead class="table-dark">
+                  <th>Calidad</th>
+                  <th>Ciudad de México</th>
+                  <th>Estado de México</th>
+                  <th>Puebla</th>
+                  <th>Sonora</th>
+                  <th>Sinaloa</th>
+                  <th>Monterrey</th>
+                  <th>Baja California</th>
+                  <th>Chihuaua</th>
+                </thead>
+                <tbody>
+                  <tr >
+                    <td><i class="bi bi-star-fill"></i></td>
+                    <td>$100</td>
+                    <td>$110</td>
+                    <td>$120</td>
+                    <td>$130</td>
+                    <td>$140</td>
+                    <td>$150</td>
+                    <td>$160</td>
+                    <td>$170</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <i class="bi bi-star-fill"> </i>
+                      <i class="bi bi-star-fill"> </i>
+                    </td>
+                    <td>$200</td>
+                    <td>$210</td>
+                    <td>$220</td>
+                    <td>$230</td>
+                    <td>$240</td>
+                    <td>$250</td>
+                    <td>$260</td>
+                    <td>$270</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <i class="bi bi-star-fill"> </i>
+                      <i class="bi bi-star-fill"> </i>
+                      <i class="bi bi-star-fill"> </i>
+                    </td>
+                    <td>$300</td>
+                    <td>$310</td>
+                    <td>$320</td>
+                    <td>$330</td>
+                    <td>$340</td>
+                    <td>$350</td>
+                    <td>$360</td>
+                    <td>$370</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <i class="bi bi-star-fill"> </i>
+                      <i class="bi bi-star-fill"> </i>
+                      <i class="bi bi-star-fill"> </i>
+                      <i class="bi bi-star-fill"> </i>
+                    </td>
+                    <td>$400</td>
+                    <td>$410</td>
+                    <td>$420</td>
+                    <td>$430</td>
+                    <td>$440</td>
+                    <td>$450</td>
+                    <td>$460</td>
+                    <td>$470</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <i class="bi bi-star-fill"> </i>
+                      <i class="bi bi-star-fill"> </i>
+                      <i class="bi bi-star-fill"> </i>
+                      <i class="bi bi-star-fill"> </i>
+                      <i class="bi bi-star-fill"> </i>
+                    </td>
+                    <td>$500</td>
+                    <td>$510</td>
+                    <td>$520</td>
+                    <td>$530</td>
+                    <td>$540</td>
+                    <td>$550</td>
+                    <td>$560</td>
+                    <td>$570</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="nav-tarjetas" role="tabpanel" aria-labelledby="nav-tarjetas-tab">
+            <div class="d-flex justify-content-center mt-3 mb-3 me-4">
+              <div class="card border-dark" style="width: 18rem;">
+                <div class="card-header">
+                  Tarjetas aceptadas
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Tarjeta básica</li>
+                  <li class="list-group-item">Tarjeta VIP</li>
+                  <li class="list-group-item">Tarjeta Black</li>
+                </ul>
+              </div>
+              <div class="ms-2">
+                <a class="link-dark" role="button" data-bs-toggle="popover" title="¿Qué son las tarjetas aceptadas?" data-bs-content="Estas son las tarjetas que aceptamos en el sitio web para poder ofrecer ofertas en los hoteles.">
+                  <i class="bi bi-question-circle" style="font-size: 1.5rem;"></i>
+                </a>
+              </div>
+            </div>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="acc_TarjetaBasica">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#basica" aria-expanded="false" aria-controls="basica">
+                    Tarjeta básica
+                  </button>
+                </h2>
+                <div id="basica" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Puedes reservar por 3 meses sin intereses. También recibirás descuentos en bebidas, desayunos y servicios adicionales del hotel.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="acc_TarjetaVIP">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#VIP" aria-expanded="false" aria-controls="VIP">
+                    Tarjeta VIP
+                  </button>
+                </h2>
+                <div id="VIP" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Puedes reservar por 6 meses sin intereses. También recibirás descuentos en bebidas, desayunos y servicios adicionales del hotel.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="acc_TarjetaBlack">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#black" aria-expanded="false" aria-controls="black">
+                    Tarjeta Black
+                  </button>
+                </h2>
+                <div id="black" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Puedes reservar por 12 meses sin intereses. También recibirás descuentos en bebidas, desayunos y servicios adicionales del hotel.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="nav-comentarios" role="tabpanel" aria-labelledby="nav-comentarios-tab">
+            <div class="mt-3">
+              <h3>Comentarios</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <hr class="my-4">
+    <!-- Footer -->
+    <footer>
+          <div class="d-flex flex-wrap justify-content-between">
+            <div class="d-flex flex-column ">
+                <h5>¿Quiénes somos?</h5>
+                <ul class="nav flex-column mb-3">
+                    <li class="nav-item mb-2"><a href="./index.html" class="nav-link p-0 text-muted">Inicio</a></li>
+                    <li class="nav-item mb-2"><a href="./precios.html" class="nav-link p-0 text-muted">Precios</a></li>
+                    <li class="nav-item mb-2"><a href="./terminos.html" class="nav-link p-0 text-muted">Términos y condiciones</a></li>
+                    <li class="nav-item mb-2"><a href="./contacto.html" class="nav-link p-0 text-muted">Contacto</a></li>
+                    <li class="nav-item mb-2"><a href="./about.html" class="nav-link p-0 text-muted">Acerca de nosotros</a></li>
+                </ul>
+            </div>
+        
+            <div class="d-flex flex-column">
+                <address>
+                    <h5>Oficina central</h5>
+                    <p class="nav-link p-0 text-muted"> <i class="bi bi-compass"></i>Esta es la dirección de la oficina</p>
+                    <p class="nav-link p-0 text-muted"> <i class="bi bi-phone"></i>+52 5511 2233 44</p>
+                    <p class="nav-link p-0 text-muted"> <i class="bi bi-envelope"></i>correo_contacto@hotmail.com</p>
+                </address>
+                
+                
+            </div>
+        
+            <div class="d-flex flex-column">
+                <form>
+                <h5>¡Suscribete a nuestros anuncios!</h5>
+                <p>Puedes obtener ofertas mensuales por parte de nuestra empresa.</p>
+                <div class="d-flex w-100 gap-2">
+                    <label for="newsletter1" class="visually-hidden"> <i class="bi bi-envelope"></i>Email</label>
+                    <input id="newsletter1" type="text" class="form-control" placeholder="Email">
+                    <button class="btn btn-secondary" type="button">Suscribirse</button>
+                </div>
+                </form>
+            </div>
+          </div>
+      
+          <div class="d-flex justify-content-between py-5 border-top">
+          <p>© 2021 Compañía Hoteles, Inc. Todos los derechos reservados.</p>
+          <ul class="list-unstyled d-flex">
+              <li class="ms-3"><a class="link-dark" href="https://www.twitter.com"><i class="bi bi-twitter" style="font-size: 1.5rem;"></i></a></li>
+              <li class="ms-3"><a class="link-dark" href="https://www.facebook.com"><i class="bi bi-facebook" style="font-size: 1.5rem;"></i></a></li>
+              <li class="ms-3"><a class="link-dark" href="https://www.instagram.com"><i class="bi bi-instagram" style="font-size: 1.5rem;"></i></a></li>
+          </ul>
+          </div>
+      </footer>
+    <script src="js/main.f3063d22abbae4fdf7c8.js"></script>
+  </body>
+</html>

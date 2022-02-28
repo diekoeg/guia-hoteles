@@ -29,3 +29,8 @@ myModal.addEventListener('hidden.bs.modal', function (event) {
     btnContacto.classList.add('btn-outline-success');  
     btnContacto.removeAttribute('disabled')
 })
+
+var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+        })

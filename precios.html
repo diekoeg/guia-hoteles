@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
+    <!-- build:css css/index.css -->
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/styles.css">
+    <!-- endbuild -->
 
     <title>Hoteles</title>
   </head>
@@ -290,13 +292,10 @@
               <li class="ms-3"><a class="link-dark" href="https://www.instagram.com"><i class="bi bi-instagram" style="font-size: 1.5rem;"></i></a></li>
           </ul>
           </div>
-      </footer>    
+      </footer>
+    <!-- build:js js/main.js -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-        return new bootstrap.Popover(popoverTriggerEl)
-        })
-    </script>
+    <script src="js/index.js"></script>
+    <!-- endbuild -->    
   </body>
 </html>
